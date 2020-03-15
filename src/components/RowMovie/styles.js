@@ -22,17 +22,30 @@ export const Cover = styled.Image`
 `;
 
 export const Details = styled.View`
-  margin-left: 12px;
-  justify-content: flex-start;
-  align-items: flex-end;
+  margin-left: 18px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex: 1;
+  padding-bottom: 8px;
 `;
 
+export const TitleYearContainer = styled.View`
+  flex-direction: row;
+`;
 export const Title = styled.Text`
-  font-size: 18px;
+  font-size: 19px;
   color: #fff;
   font-weight: bold;
 `;
-export const Genres = styled.Text``;
-export const Year = styled.Text``;
+export const Genres = styled.Text`
+  color: #a3a3a3;
+  font-size: 16px;
+  font-weight: 100;
+`;
+export const Year = styled.Text`
+  color: #a3a3a3;
+  font-size: 13px;
+  font-weight: 100;
+`;
 
 export const Button = styled.TouchableOpacity``;

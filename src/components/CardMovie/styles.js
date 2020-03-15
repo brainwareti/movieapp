@@ -1,13 +1,19 @@
 import styled from 'styled-components';
 
+const posterRatio = 2 / 3;
+
+const posterwidth = 140;
+const posterheight = 145 / posterRatio;
+
 export const Container = styled.View`
   width: 140px;
   margin-right: 12px;
+  align-self: center;
 `;
 
 export const Cover = styled.Image`
   width: 100%;
-  height: 200px;
+  height: ${posterheight}px;
   margin-bottom: 12px;
   border-radius: 8px;
 `;

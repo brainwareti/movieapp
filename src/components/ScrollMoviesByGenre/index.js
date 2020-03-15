@@ -1,8 +1,10 @@
 import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
-import {ScrollView} from 'react-native';
+import {FlatList} from 'react-native';
+import {Container} from './styles';
 
 import RowMovie from '../RowMovie';
+import CardMovie from '../CardMovie';
 
 const ScrollMoviesByGenre = ({navigation}) => {
   const movies = useSelector(state => state.movies.moviesByGenre);
@@ -13,11 +15,14 @@ const ScrollMoviesByGenre = ({navigation}) => {
   }, [movies]);
 
   return (
-    <ScrollView
-      showsVerticalScrollIndicator={false}
-      style={{marginBottom: 24, flex: 1}}>
-      {movies && movies.map(movie => <RowMovie movie={movie} />)}
-    </ScrollView>
+    <Container>
+      <FlatList
+        data={movies}
+        renderItem={({item}) => <CardMovie movie={item} />}
+        keyExtractor={movie => movie.id}
+        numColumns={2}
+      />
+    </Container>
   );
 };
 

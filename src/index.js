@@ -1,12 +1,16 @@
 import React, {Component} from 'react';
+import {Provider} from 'react-redux';
 
-import Routes from '~/routes';
+import store from './store';
+import Routes from './routes';
 import '~/config/ReactotronConfig';
-
-import {View} from 'react-native';
 
 export default class App extends Component {
   render() {
-    return <Routes />;
+    return (
+      <Provider store={store}>
+        <Routes />
+      </Provider>
+    );
   }
 }

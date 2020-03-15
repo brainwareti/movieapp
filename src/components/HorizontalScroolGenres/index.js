@@ -5,7 +5,7 @@ import {ScrollView} from 'react-native';
 
 import Tag from '../Tag';
 
-const HorizontalScroolGenres = ({navigation, genres}) => {
+const HorizontalScroolGenres = ({genres}) => {
   return (
     <ScrollView
       horizontal={true}

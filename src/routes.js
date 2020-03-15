@@ -5,6 +5,7 @@ import React from 'react';
 
 import Login from './pages/Login';
 import Main from './pages/Main';
+import MovieDetails from './pages/MovieDetails';
 
 const Stack = createStackNavigator();
 const BottomTab = createBottomTabNavigator();
@@ -23,6 +24,7 @@ function Routes() {
       <Stack.Navigator initialRouteName="Main" headerMode="none">
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Main" component={Main} />
+        <Stack.Screen name="MovieDetails" component={MovieDetails} />
       </Stack.Navigator>
     </NavigationContainer>
   );

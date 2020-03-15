@@ -6,13 +6,11 @@ import {Container} from './styles';
 import RowMovie from '../RowMovie';
 import CardMovie from '../CardMovie';
 
-const ScrollMoviesByGenre = ({navigation}) => {
+const ScrollMoviesByGenre = () => {
   const movies = useSelector(state => state.movies.moviesByGenre);
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    console.tron.log('aqui estou mais um dia');
-  }, [movies]);
+  useEffect(() => {}, [movies]);
 
   return (
     <Container>

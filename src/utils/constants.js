@@ -4,4 +4,5 @@ export const IMAGE_URL = 'https://image.tmdb.org/t/p/';
 export const MOVIE_DB_URL = 'https://api.themoviedb.org/3/';
 
 export const IMAGE_W500_URL = 'https://image.tmdb.org/t/p/w500';
-export const IMAGE_W342_URL = 'https://image.tmdb.org/t/p/w185';
+export const IMAGE_W185_URL = 'https://image.tmdb.org/t/p/w185';
+export const IMAGE_W780_URL = 'https://image.tmdb.org/t/p/w780';

@@ -7,14 +7,16 @@ import CardMovie from '../CardMovie';
 
 // import { Container } from './styles';
 
-const HorizontalScroolTrendingsMovies = ({navigation, trendings}) => {
+const HorizontalScroolTrendingsMovies = ({trendings}) => {
   return (
     <ScrollView
       horizontal={true}
       showsHorizontalScrollIndicator={false}
       style={{marginBottom: 24}}>
       {trendings &&
-        trendings.map(movie => <CardMovie movie={movie} key={movie.id} />)}
+        trendings.map(movie => (
+          <CardMovie movie={movie} key={movie.id} trendings />
+        ))}
     </ScrollView>
   );
 };

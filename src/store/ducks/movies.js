@@ -29,7 +29,7 @@ export default function reducer(state = INITIAL_STATE, action) {
       return {
         ...state,
         selectedMovieId: id,
-        selectedMovie: state.moviesByGenre.filter(movie => movie.id === id),
+        selectedMovie: state.moviesByGenre.filter(movie => movie.id === id)[0],
       };
     default:
       return state;
